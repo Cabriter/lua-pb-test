@@ -11,13 +11,13 @@ message account
 message playerdata
 {
 	optional userdata user = 1;
-	repeated item items = 2;
-	repeated food foods = 3;
-	repeated recipe recipes = 4;
-	repeated employee employees = 5;
-	repeated random_task random_tasks = 6;
-	repeated collecting_region collecting_region = 7;
-	repeated collecting_staff collecting_staff = 8;
+	map<int32, item> items = 2;
+	map<int32, food> foods = 3;
+	map<int32, recipe> recipes = 4;
+	map<int32, employee> employees = 5;
+	map<int32, random_task> random_tasks = 6;
+	map<int32, collecting_region> collecting_region = 7;
+	map<int32, collecting_staff> collecting_staff = 8;
 	optional chat_info chat_contents = 9;
 }
 
@@ -32,7 +32,7 @@ message userdata
 message market
 {
 	repeated int32 recipes = 1;
-	repeated market_employee employees = 2;
+	map<int32,market_employee> employees = 2;
 }
 
 message market_employee

@@ -1,33 +1,59 @@
 
-á
+à
 
 test.prototest"B
 account
 id (:0Rid$
-data (2.test.playerdataRdata"¿
+data (2.test.playerdataRdata"â
 
 playerdata"
-user (2.test.userdataRuser 
-items (2
-.test.itemRitems 
-foods (2
-.test.foodRfoods&
-recipes (2.test.recipeRrecipes,
-	employees (2.test.employeeR	employees4
-random_tasks (2.test.random_taskRrandomTasksD
-collecting_region (2.test.collecting_regionRcollectingRegionA
-collecting_staff (2.test.collecting_staffRcollectingStaff4
-chat_contents	 (2.test.chat_infoRchatContents"Œ
+user (2.test.userdataRuser1
+items (2.test.playerdata.ItemsEntryRitems1
+foods (2.test.playerdata.FoodsEntryRfoods7
+recipes (2.test.playerdata.RecipesEntryRrecipes=
+	employees (2.test.playerdata.EmployeesEntryR	employeesD
+random_tasks (2!.test.playerdata.RandomTasksEntryRrandomTasksS
+collecting_region (2&.test.playerdata.CollectingRegionEntryRcollectingRegionP
+collecting_staff (2%.test.playerdata.CollectingStaffEntryRcollectingStaff4
+chat_contents	 (2.test.chat_infoRchatContentsD
+
+ItemsEntry
+key (Rkey 
+value (2
+.test.itemRvalue:8D
+
+FoodsEntry
+key (Rkey 
+value (2
+.test.foodRvalue:8H
+RecipesEntry
+key (Rkey"
+value (2.test.recipeRvalue:8L
+EmployeesEntry
+key (Rkey$
+value (2.test.employeeRvalue:8Q
+RandomTasksEntry
+key (Rkey'
+value (2.test.random_taskRvalue:8\
+CollectingRegionEntry
+key (Rkey-
+value (2.test.collecting_regionRvalue:8Z
+CollectingStaffEntry
+key (Rkey,
+value (2.test.collecting_staffRvalue:8"Œ
 userdata
 coin (:0Rcoin#
 hamsterTime (:0RhamsterTime
 
 platformLv (R
 platformLv$
-market (2.test.marketRmarket"W
+market (2.test.marketRmarket"²
 market
-recipes (Rrecipes3
-	employees (2.test.market_employeeR	employees"_
+recipes (Rrecipes9
+	employees (2.test.market.EmployeesEntryR	employeesS
+EmployeesEntry
+key (Rkey+
+value (2.test.market_employeeRvalue:8"_
 market_employee
 id (:0Rid
 index (:0Rindex 

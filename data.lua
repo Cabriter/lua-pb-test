@@ -30,17 +30,17 @@ local HPlayerData = {
             },
         },
         items = {
-            {
+            [301001] = {
                 id = 301001,
                 count = 500
             },
-            {
+            [301002] = {
                 id = 301002,
                 count = 1000
             },
         },
         foods = {
-            {
+            [1] = {
                 id = 0,
                 cid = 201001,
                 A = 10,
@@ -48,7 +48,7 @@ local HPlayerData = {
                 C = 10,
                 D = 10,
             },
-            {
+            [2] = {
                 id = 1,
                 cid = 201002,
                 A = 10,
@@ -56,7 +56,7 @@ local HPlayerData = {
                 C = 10,
                 D = 10,
             },
-            {
+            [3] = {
                 id = 2,
                 cid = 201003,
                 A = 10,
@@ -64,7 +64,7 @@ local HPlayerData = {
                 C = 10,
                 D = 10,
             },
-            {
+            [4] = {
                 id = 3,
                 cid = 201004,
                 A = 10,
@@ -74,21 +74,21 @@ local HPlayerData = {
             },
         },
         recipes = {
-            {
+            [201001] = {
                 id = 201001,
                 A = 150,
                 B = 50,
                 C = 100,
                 D = 40,
             },
-            {
+            [201002] = {
                 id = 201002,
                 A = 50,
                 B = 50,
                 C = 100,
                 D = 40,
             },
-            {
+            [201003] = {
                 id = 201003,
                 A = 10,
                 B = 50,
@@ -97,19 +97,19 @@ local HPlayerData = {
             },
         },
         employees = {
-            {
+            [101001] = {
                 id = 101001,
                 lv = 1,
                 experience = 2,
                 jobs = {1,2,3}
             },
-            {
+            [102001] = {
                 id = 102001,
                 lv = 1,
                 experience = 2,
                 jobs = {1}
             },
-            {
+            [102002] = {
                 id = 102002,
                 lv = 1,
                 experience = 2,
@@ -117,7 +117,7 @@ local HPlayerData = {
             },
         },
         random_tasks = {
-            {
+            [1] = {
                 customerid = 101001,
                 items = {
                     {
@@ -149,7 +149,7 @@ local HPlayerData = {
                     },
                 },
             },
-            {
+            [2] = {
                 customerid = 101002,
                 items = {
                     {
@@ -187,19 +187,19 @@ local HPlayerData = {
             },
         },
         collecting_region = {
-            {
+            [501001] = {
                 region_id = 501001,
                 status = 0,
                 last_time = 0,
                 staff_id = 0,
             },
-            {
+            [501002] = {
                 region_id = 501002,
                 status = 0,
                 last_time = 0,
                 staff_id = 0,
             },
-            {
+            [501003] = {
                 region_id = 501003,
                 status = 0,
                 last_time = 0,
@@ -207,19 +207,19 @@ local HPlayerData = {
             },
         },
         collecting_staff = {
-            {
+            [106001] = {
                 id = 106001,
                 last_time = 0
             },
-            {
+            [106002] = {
                 id = 106002,
                 last_time = 0
             },
-            {
+            [106003] = {
                 id = 106003,
                 last_time = 0
             },
-            {
+            [106004] = {
                 id = 106004,
                 last_time = 0
             },

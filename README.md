@@ -46,3 +46,10 @@
 ## 数据类型对应关系
 
 * ![proto-lua](./images/proto-lua.png)
+
+## 常见问题
+
+* proto在encode的时候会优化数据，例如map中的key是int,并且是从1开始连续的，那么在encode后的结构和list是一样的，因为对lua来说访问方式是一样的，非1开始连续的元素还是会和原有map结构一致
+  * ![image-20201122171759869](./images/map-list.png)
+  * ![image-20201122172024398](./images/map-split-list.png)
+  * ![image-20201122172154777](./images/map-map.png)
