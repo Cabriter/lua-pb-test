@@ -1,0 +1,129 @@
+syntax = 'proto2';
+
+package test;
+
+message account
+{
+	optional int32 id = 1[default = 0];
+	optional playerdata data = 2;
+}
+
+message playerdata
+{
+	optional userdata user = 1;
+	repeated item items = 2;
+	repeated food foods = 3;
+	repeated recipe recipes = 4;
+	repeated employee employees = 5;
+	repeated random_task random_tasks = 6;
+	repeated collecting_region collecting_region = 7;
+	repeated collecting_staff collecting_staff = 8;
+	optional chat_info chat_contents = 9;
+}
+
+message userdata
+{
+	optional int32 coin = 1[default = 0];
+	optional int32 hamsterTime = 2[default = 0];
+	repeated int32 platformLv = 3;
+	optional market market = 4;
+}
+
+message market
+{
+	repeated int32 recipes = 1;
+	repeated market_employee employees = 2;
+}
+
+message market_employee
+{
+	optional int32 id = 1[default = 0];
+	optional int32 index = 2[default = 0];
+	optional int32 start_time = 3[default = 0];
+}
+
+message item
+{
+	optional int32 id = 1[default = 0];
+	optional int32 count = 2[default = 0];
+}
+
+message food
+{
+	optional int32 id = 1[default = 0];
+	optional int32 cid = 2[default = 0];
+	optional int32 A = 3[default = 0];
+	optional int32 B = 4[default = 0];
+	optional int32 C = 5[default = 0];
+	optional int32 D = 6[default = 0];
+}
+
+message recipe
+{
+	optional int32 id = 1[default = 0];
+	optional int32 A = 2[default = 0];
+	optional int32 B = 3[default = 0];
+	optional int32 C = 4[default = 0];
+	optional int32 D = 5[default = 0];
+}
+
+message employee
+{
+	optional int32 id = 1[default = 0];
+	optional int32 lv = 2[default = 0];
+	optional int32 experience = 3[default = 0];
+	repeated int32 jobs = 4;
+}
+
+message reward
+{
+	repeated item items = 2;
+}
+
+message random_task
+{
+	optional int32 customerid = 1[default = 0];
+	repeated item items = 2;
+	optional float yield_rate = 3[default = 0];
+	optional int32 dialogid = 4[default = 0];
+	optional int32 wait_time = 5[default = 0];
+	optional reward rewards = 6;
+}
+
+message collecting_region
+{
+	optional int32 region_id = 1[default = 0];
+	optional int32 status = 2[default = 0];
+	optional int32 last_time = 3[default = 0];
+	optional int32 staff_id = 4[default = 0];
+}
+
+message collecting_staff
+{
+	optional int32 id = 1[default = 0];
+	optional int32 last_time = 2[default = 0];
+}
+
+message chat_info
+{
+	map<int32, unit_chat> food_guide = 1;
+	map<int32, unit_chat> ingredient_guide = 2;
+	map<int32, unit_chat> employee_guide = 3;
+}
+
+message unit_chat
+{
+	repeated user_chat contents = 1;
+}
+
+message user_chat 
+{
+	optional user_info user = 1;
+	optional string content = 2;
+}
+message user_info
+{
+	optional int32 id = 1[default = 0];
+	optional string name = 2;
+	optional string icon = 3;
+}
