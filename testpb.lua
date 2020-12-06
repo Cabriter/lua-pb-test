@@ -1,7 +1,6 @@
-require "luarocks.loader"
-local pb = require "pb"
-
+--require "luarocks.loader"
 local serpent = require "serpent"
+local pb = require "pb"
 local data = require "data"
 
 pb.loadfile("./test.pb")
@@ -22,17 +21,13 @@ function read()
 	local cache = io.open("encode.data","r")
 	local allfile = cache:read("*a")
 	local dedata = pb.decode("test.account",allfile)
-	cache:close()
-
-	local outdata = serpent.block(dedata)
+	
+	local outdata = (require "serpent".block(dedata))
 	local outcache = io.open("decode.lua","w+")
-	print (outdata)
+--	print (outdata)
 	local ret = outcache:write(outdata)
-	outcache:close()
+	cache:close()
 end
 
 write()
 read()
-
-
-print("successful !")

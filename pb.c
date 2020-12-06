@@ -14,8 +14,8 @@ PB_NS_BEGIN
 
 
 #define LUA_LIB
-#include <lua.h>
-#include <lauxlib.h>
+#include "lua.h"
+#include "lauxlib.h"
 
 
 #include <stdio.h>
