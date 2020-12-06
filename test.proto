@@ -31,7 +31,8 @@ message userdata
 
 message market
 {
-	repeated int32 recipes = 1;
+	map<int32,int32> recipes = 1;
+	//repeated int32 recipes = 1;
 	map<int32,market_employee> employees = 2;
 }
 

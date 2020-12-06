@@ -12,8 +12,8 @@ local HPlayerData = {
             },
             market = {
                 recipes = {
-                    101001,
-                    102002,
+                    [2] = 101001,
+                    [3] = 102002,
                 },
                 employees = {
                     [1] = {
