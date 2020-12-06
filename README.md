@@ -15,6 +15,8 @@
   * lua开源序列化为字符串的库
 * protoc
   * 将.proto编译为.pb文件的程序，当前版本为3.4.0
+* build.sh
+  * 编译pb为so动态链接库
 * runtest.sh
   * 快速测试shell程序
 
@@ -28,6 +30,7 @@
   * brew install luarocks
   * 安装luarocks中的lua-protobuf库
     * luarocks install lua-protobuf
+  * 也可以不用luarocks安装，目录下有build.sh可以自行编译so
 
 ## 测试步骤
 
@@ -38,6 +41,7 @@
 * 在cmd中cd到工程目录，执行
 
   * ``` shell
+    sh build.sh
     sh run.sh
     ```
 
